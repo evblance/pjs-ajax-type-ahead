@@ -1,5 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Kreon|Open+Sans');
+
 body {
   background: hsl(283, 30%, 30%);
+  color: hsl(60, 3%, 94%);
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
+}
+
+a {
+  color: hsl(60, 3%, 94%);
+}
+
+.attribution {
+  font-size: 0.8rem;
+  margin: 0 auto;
+}
+
+.search {
+  background: hsl(283, 17%, 37%);
+  border: 3px solid hsl(60, 3%, 94%);
+  border-radius: 5px;
+  color: hsl(60, 3%, 94%);
+  display: block;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  margin: 0 auto;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.search:focus {
+  background: hsl(283, 17%, 28%);
+}
+
+.title {
+  font-family: "Kreon", serif;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.result {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.results {
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+}
+
+footer {
+  text-align: center;
 }
