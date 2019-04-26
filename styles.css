@@ -1,5 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Kreon|Open+Sans');
+
 body {
   background: hsl(283, 30%, 30%);
+  color: hsl(60, 3%, 94%);
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
+}
+
+a {
+  color: hsl(60, 3%, 94%);
+}
+
+.attribution {
+  font-size: 0.8rem;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Kreon", serif;
+  font-size: 3rem;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
 }
