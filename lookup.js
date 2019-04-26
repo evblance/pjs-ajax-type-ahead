@@ -20,6 +20,7 @@ const showResults = (search, results) => {
     // We want the HTML representing the name to have the search term highlighted
     const nameEl = document.createElement('div');
     nameEl.innerHTML = result.name.replace(search, `<span class="highlighted">${search}</span>`);
+    nameEl.classList.add('data');
 
     const massEl = document.createElement('div');
     // Represent the mass in tonnes for brievity
@@ -29,6 +30,7 @@ const showResults = (search, results) => {
       `-`
     );
     massEl.appendChild(massVal);
+    massEl.classList.add('data');
 
     res.appendChild(nameEl);
     res.appendChild(massEl);

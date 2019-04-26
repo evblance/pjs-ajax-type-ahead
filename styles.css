@@ -41,6 +41,10 @@ a {
   background: var(--primary-colour-shade-dark);
 }
 
+.data {
+  margin: 0 5px;
+}
+
 .title {
   font-family: "Kreon", serif;
   font-size: 3rem;
@@ -51,14 +55,17 @@ a {
   align-items: center;
   border: 1px solid var(--secondary-colour);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0.25rem;
   padding: 0.5rem 0;
-  text-align: left;
 }
 
 .results {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
   margin: 0 auto;
+  width: 400px;
 }
 
 .highlighted {
