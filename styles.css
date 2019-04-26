@@ -1,15 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Kreon|Open+Sans');
 
+:root {
+  --primary-colour: hsl(283, 30%, 30%);
+  --primary-colour-shade-light: hsl(283, 17%, 37%);
+  --primary-colour-shade-dark: hsl(283, 17%, 28%);
+  --secondary-colour: hsl(60, 3%, 94%);
+}
+
 body {
-  background: hsl(283, 30%, 30%);
-  color: hsl(60, 3%, 94%);
+  background: var(--primary-colour);
+  color: var(--secondary-colour);
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
 }
 
 a {
-  color: hsl(60, 3%, 94%);
+  color: var(--secondary-colour);
 }
 
 .attribution {
@@ -18,10 +25,10 @@ a {
 }
 
 .search {
-  background: hsl(283, 17%, 37%);
-  border: 3px solid hsl(60, 3%, 94%);
+  background: var(--primary-colour-shade-light);
+  border: 3px solid var(--secondary-colour);
   border-radius: 5px;
-  color: hsl(60, 3%, 94%);
+  color: var(--secondary-colour);
   display: block;
   font-size: 1.5rem;
   padding: 0.5rem;
@@ -31,7 +38,7 @@ a {
 }
 
 .search:focus {
-  background: hsl(283, 17%, 28%);
+  background: var(--primary-colour-shade-dark);
 }
 
 .title {
@@ -42,14 +49,21 @@ a {
 
 .result {
   align-items: center;
+  border: 1px solid var(--secondary-colour);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin: 0.25rem;
+  padding: 0.5rem 0;
+  text-align: left;
 }
 
 .results {
   margin: 0 auto;
-  max-width: 800px;
-  width: 100%;
+}
+
+.highlighted {
+  background: var(--secondary-colour);
+  color: var(--primary-colour);
 }
 
 footer {
