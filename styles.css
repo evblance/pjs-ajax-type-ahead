@@ -40,6 +40,18 @@ a {
   text-align: center;
 }
 
+.result {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.results {
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+}
+
 footer {
   text-align: center;
 }
